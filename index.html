@@ -4,140 +4,148 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Maniddhari Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --light-cream: #FAF3E0;
-      --soft-beige: #E8D8C4;
-      --dark-gray: #3B3B3B;
-      --gold: #D4AF37;
-    }
-
-    html {
-      scroll-behavior: smooth;
+      --background: #fdfaf6;
+      --beige: #e8d8c4;
+      --gold: #c6a85f;
+      --deep-gold: #bfa14a;
+      --soft-brown: #5b4636;
+      --white: #ffffff;
     }
 
     body {
-      font-family: 'Georgia', serif;
-      background-color: var(--light-cream);
-      color: var(--dark-gray);
+      font-family: 'Lora', serif;
+      background-color: var(--background);
+      color: var(--soft-brown);
       margin: 0;
-      padding: 0;
-      line-height: 1.7;
+      line-height: 1.75;
     }
 
     header {
-      background: linear-gradient(135deg, var(--soft-beige), var(--gold));
-      color: white;
+      background: linear-gradient(to right, var(--beige), var(--gold));
+      color: var(--soft-brown);
+      padding: 100px 20px 60px;
       text-align: center;
-      padding: 70px 20px 40px;
     }
 
     header h1 {
-      font-size: 4em;
-      margin: 0;
-      letter-spacing: 1px;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      margin-bottom: 10px;
     }
 
     header p {
-      font-size: 1.5em;
-      margin-top: 10px;
+      font-size: 1.3em;
+      font-style: italic;
     }
 
     nav {
-      background-color: var(--dark-gray);
+      background-color: var(--soft-brown);
+      padding: 14px 0;
       text-align: center;
-      padding: 12px 0;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 1000;
     }
 
     nav ul {
       list-style: none;
-      padding: 0;
       margin: 0;
-    }
-
-    nav ul li {
-      display: inline;
-      margin: 0 18px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
     }
 
     nav ul li a {
-      color: var(--light-cream);
+      color: var(--white);
       text-decoration: none;
+      font-weight: 600;
       font-size: 1.1em;
-      font-weight: bold;
-      padding: 6px 10px;
-      border-radius: 5px;
-      transition: background 0.3s, color 0.3s;
+      transition: 0.3s;
     }
 
     nav ul li a:hover {
-      background-color: var(--gold);
-      color: var(--dark-gray);
+      color: var(--gold);
     }
 
     main {
-      padding: 70px 20px 50px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
+      padding: 60px 20px;
     }
 
     section {
-      margin-bottom: 70px;
+      background: var(--white);
+      padding: 50px 30px;
+      margin-bottom: 60px;
+      border-left: 5px solid var(--gold);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     }
 
     section h2 {
-      font-size: 2.7em;
-      color: var(--gold);
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5em;
+      color: var(--soft-brown);
       margin-bottom: 20px;
       text-align: center;
     }
 
+    section h2 a {
+      text-decoration: none;
+      color: inherit;
+    }
+
     section p {
-      font-size: 1.25em;
-      color: var(--dark-gray);
+      font-size: 1.2em;
       text-align: center;
     }
 
     #contact {
-      background-color: var(--gold);
-      padding: 50px 20px;
+      background: var(--beige);
+      padding: 60px 20px;
       text-align: center;
-      color: white;
+      color: var(--soft-brown);
     }
 
     #contact h2 {
-      margin-bottom: 25px;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.3em;
+      margin-bottom: 30px;
     }
 
-    address p, address a {
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
       font-size: 1.1em;
-      color: white;
-      margin: 8px 0;
-      text-decoration: none;
+      align-items: center;
     }
 
-    address a:hover {
-      color: var(--dark-gray);
+    .contact-info a {
+      color: var(--soft-brown);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+      color: var(--deep-gold);
     }
 
     footer {
-      background-color: var(--dark-gray);
-      color: var(--light-cream);
+      background: var(--soft-brown);
+      color: var(--white);
       text-align: center;
-      padding: 15px 0;
-    }
-
-    footer p {
-      margin: 0;
-      font-size: 0.9em;
+      padding: 20px;
+      font-size: 0.95em;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Maniddhari Group</h1>
     <p>Jewelry, Catering & Event Planning with a Personal Touch</p>
@@ -145,7 +153,7 @@
 
   <nav>
     <ul>
-      <li><a href="#jewelry">Jewelry</a></li>
+      <li><a href="#gems">Gems</a></li>
       <li><a href="#catering">Catering</a></li>
       <li><a href="#events">Events</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -153,38 +161,35 @@
   </nav>
 
   <main>
-    <section id="jewelry">
-      <h2>Maniddhari Gems</h2>
-      <p>Maniddhari Gems stands as the jewel of our group, renowned for its expertise in crafting luxury, timeless jewelry. Our creations beautifully blend age-old traditions with modern design sensibilities, offering everything from regal bridal sets and temple jewelry to elegant, contemporary pieces for everyday wear. Every ornament is meticulously designed by our artisans, ensuring unmatched craftsmanship, purity, and elegance. We also undertake exclusive bespoke commissions for clients from across India and internationally.</p>
+    <section id="gems">
+      <h2><a href="gems.html" target="_blank">Maniddhari Gems Inc</a></h2>
+      <p>Where timeless craftsmanship meets contemporary elegance. Our curated collection ranges from regal bridal sets to refined everyday statements — each piece a testament to artistry, tradition, and opulence. Discover the legacy that defines true luxury.</p>
     </section>
 
     <section id="catering">
-      <h2>Catering Services</h2>
-      <p>Maniddhari Catering is synonymous with gourmet vegetarian excellence. Our menu showcases a rich tapestry of flavors, featuring everything from authentic Indian delicacies to globally inspired dishes, with a focus on Jain-friendly preparations. Whether it's an intimate gathering or a grand wedding banquet, our expert chefs curate each menu with creativity and precision. From live counters to customized desserts and signature beverages — every detail is planned to impress and satisfy the most discerning guests.</p>
+      <h2><a href="catering.html" target="_blank">Maniddhari Food and Catering</a></h2>
+      <p>A celebration of flavor, finesse, and purity. We specialize in gourmet vegetarian cuisine rooted in tradition and inspired by global cultures — from immersive live counters to thoughtfully designed Jain menus. Elevate every occasion with culinary excellence.</p>
     </section>
 
     <section id="events">
-      <h2>Event Planning</h2>
-      <p>Our event planning service transforms celebrations into unforgettable experiences. Be it destination weddings, milestone birthdays, corporate retreats, or religious ceremonies — we handle everything, from theme and décor to entertainment, catering, and logistics. With a dedicated team of planners, stylists, and coordinators, Maniddhari Group ensures that each event is executed with seamless precision and flair, leaving lasting impressions on your guests.</p>
+      <h2><a href="events.html" target="_blank">Maniddhari Event Planners</a></h2>
+      <p>Crafting grandeur with grace. From royal weddings to bespoke corporate gatherings, our event experts orchestrate every detail with precision and poise. We transform your vision into experiences that are timeless, tasteful, and truly unforgettable.</p>
     </section>
   </main>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <address>
-      <p>1234 Example Street, Kolkata</p>
-      <p><a href="tel:+919830009211">+91 98300 09211</a></p>
-      <p><a href="https://wa.me/911234567890">Chat on WhatsApp</a></p>
-      <p><a href="https://instagram.com/maniddharigroup">@maniddharigroup</a></p>
-    </address>
+    <div class="contact-info">
+      <p><a href="https://www.google.com/maps?q=41,+Burtolla+Street,+Kolkata+700007" target="_blank">41, Burtolla Street, Kolkata 700007</a></p>
+      <p><a href="https://wa.me/919830009311" target="_blank">+91 98300 09311</a></p>
+      <p><a href="https://wa.me/919331148748" target="_blank">+91 93311 48748</a></p>
+      <p><a href="https://www.instagram.com/maniddharigroup?igsh=MTdpYWgwb29icDg3YQ==" target="_blank">@maniddharigroup</a></p>
+      <p><a href="mailto:maniddharigroups@gmail.com">maniddharigroups@gmail.com</a></p>
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Maniddhari Group. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
-
-
-
